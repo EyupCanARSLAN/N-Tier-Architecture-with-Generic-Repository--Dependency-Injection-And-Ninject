@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Order System -Managements Controller</h2>
+<h4>In the Following Menu; You can choose links to manage this system.</h4>
+<ul>
+    <li>
+        @Html.ActionLink("See the New Orders By Customers", "Index","OrderProcess")
+    </li>
+    <li>
+        @Html.ActionLink("See the Feedback By Customers", "Index", "Feedback")
+    </li>
+    <li>
+        @Html.ActionLink("Progress On Menu and Products", "Index", "MenuProcess")
+    </li>
+</ul>
+<br />
+<h4>See the System Erros. @Html.ActionLink("Progress On Menu and Products", "Index", "ShowException")</h4>

@@ -1,0 +1,171 @@
+﻿<error errorId="fe8183e0-bb8d-4538-a70e-4ee6e6cf881f" host="CANBEY" type="System.Data.SqlClient.SqlException" message="Cannot insert duplicate key row in object 'dbo.SiparisDetay' with unique index 'IX_UniqSiparis'. The duplicate key value is (1023, 1).&#xD;&#xA;The statement has been terminated." source=".Net SqlClient Data Provider" detail="System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---&gt; System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.SiparisDetay' with unique index 'IX_UniqSiparis'. The duplicate key value is (1023, 1).&#xD;&#xA;The statement has been terminated.&#xD;&#xA;   konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   konum: System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)&#xD;&#xA;   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)&#xD;&#xA;   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)&#xD;&#xA;   konum: System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()&#xD;&#xA;   konum: System.Data.SqlClient.SqlDataReader.get_MetaData()&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)&#xD;&#xA;   konum: System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)&#xD;&#xA;   konum: System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)&#xD;&#xA;   konum: System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.&lt;Reader&gt;b__c(DbCommand t, DbCommandInterceptionContext`1 c)&#xD;&#xA;   konum: System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)&#xD;&#xA;   konum: System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)&#xD;&#xA;   konum: System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)&#xD;&#xA;   konum: System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)&#xD;&#xA;   konum: System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)&#xD;&#xA;   konum: System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()&#xD;&#xA;   --- İç özel durum yığını izlemesinin sonu ---&#xD;&#xA;   konum: System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()&#xD;&#xA;   konum: System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.&lt;Update&gt;b__2(UpdateTranslator ut)&#xD;&#xA;   konum: System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)&#xD;&#xA;   konum: System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.&lt;SaveChangesToStore&gt;b__35()&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.&lt;&gt;c__DisplayClass2a.&lt;SaveChangesInternal&gt;b__27()&#xD;&#xA;   konum: System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)&#xD;&#xA;   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)&#xD;&#xA;   konum: System.Data.Entity.Internal.InternalContext.SaveChanges()&#xD;&#xA;   --- İç özel durum yığını izlemesinin sonu ---&#xD;&#xA;   konum: Sistem.Web.Controllers.Customer.CustomerMenuController.ComplateOrder() C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\Controllers\Customer\CustomerMenuController.cs içinde: satır 247&#xD;&#xA;   konum: lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   konum: System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;BeginInvokeSynchronousActionMethod&gt;b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass33.&lt;BeginInvokeActionMethodWithFilters&gt;b__32(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="eyupcan2@gmail.com" time="2016-01-31T14:06:43.7252063Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;Cookie: __RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2&#xD;&#xA;Host: localhost:54272&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/CustomerMenu/ComplateOrder" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\CustomerMenu\ComplateOrder" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="51637" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/CustomerMenu/ComplateOrder" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/CustomerMenu/ComplateOrder" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="ndvl4ee1k1vakcek1uask3zf" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2" />
+    </item>
+  </cookies>
+</error>

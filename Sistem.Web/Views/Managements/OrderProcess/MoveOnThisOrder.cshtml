@@ -1,0 +1,62 @@
+﻿@model Sistem.Core.Data.OrderK.Order
+@{
+    ViewBag.Title = "MoveOnThisOrder";
+}
+<h2>MoveOnThisOrder</h2>
+<div>
+    <h4>Siparis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId )
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice )
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>  
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneCodeAccept )
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneCodeAccept)
+        </dd>
+    </dl>
+</div>
+<table cellpadding="10">
+    <tr>
+        <th>
+            Menu Adı
+        </th>
+        <th> Adet</th>
+        <th> Fiyat</th>
+    </tr>
+    @foreach (var item in Model.OrderDetail )
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Menu.MenuName )
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count )
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesPrice )
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Send For Customer", "CloseOrder", new { SiparisId=Model.OrderId,MusteriID=Model.CustomerId }) |
+    @Html.ActionLink("Cancel This Order", "CancelOrder"  ,new { SiparisId = Model.OrderId, MusteriID = Model.CustomerId })
+</p>

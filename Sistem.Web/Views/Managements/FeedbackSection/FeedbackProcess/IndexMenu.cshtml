@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Sistem.Core.Data.CritiqK.MenuCritiq>  
+@{
+    ViewBag.Title = "Menu Feedback By Customer";
+}
+<h2>Menu Feedback By Customer</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Menu.MenuName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)        
+        </th>
+        <th></th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Menu.MenuName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerId)
+        </td>
+        <td>
+           @Html.ActionLink("See The Feedback", "DetailsAboutMenuFeedback", new { FeedbackId = item.CritiqMenuId }) |   
+        </td>
+    </tr>
+}
+</table>
+@Html.ActionLink("See The General Feedback", "Index", new { Type = 1 }) |
+@Html.ActionLink("See The Menu Feedback", "Index", new { Type = 2 }) |
+@Html.ActionLink("See The Order Feedback", "Index", new { Type = 3 }) |

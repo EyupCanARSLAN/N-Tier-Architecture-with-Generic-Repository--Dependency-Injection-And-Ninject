@@ -1,0 +1,173 @@
+﻿<error errorId="df6beac6-0af9-4a5c-b428-e34283850354" host="CANBEY" type="System.InvalidOperationException" message="Sıra hiçbir öğe içermiyor" source="Sistem.Web" detail="System.InvalidOperationException: Sıra hiçbir öğe içermiyor&#xD;&#xA;   konum: Sistem.Web.Controllers.Managements.OrderSection.OrderProcessController.MoveOnThisOrder(Nullable`1 SiparisId, String MusteriId) C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\Controllers\Managements\OrderSection\OrderProcessController.cs içinde: satır 65&#xD;&#xA;   konum: lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   konum: System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;BeginInvokeSynchronousActionMethod&gt;b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass33.&lt;BeginInvokeActionMethodWithFilters&gt;b__32(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="admin@example.com" time="2016-02-03T20:29:37.0626559Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;Cookie: __RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ&#xD;&#xA;Host: localhost:54272&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/OrderProcess/MoveOnThisOrder" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\OrderProcess\MoveOnThisOrder" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="SiparisID=1026&amp;MusteriId=canbeys" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="55177" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/OrderProcess/MoveOnThisOrder" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/OrderProcess/MoveOnThisOrder" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="SiparisID">
+      <value string="1026" />
+    </item>
+    <item name="MusteriId">
+      <value string="canbeys" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ" />
+    </item>
+  </cookies>
+</error>

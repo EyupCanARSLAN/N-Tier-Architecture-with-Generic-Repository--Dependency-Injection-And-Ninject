@@ -1,0 +1,47 @@
+﻿@model Sistem.Core.Data.CritiqK.MenuCritiq
+@{
+    ViewBag.Title = "Details About Feedback";
+}
+<h2>DetailsAboutFeedback</h2>
+<div>
+    <h4>CritiqOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CritiqMessage)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CritiqMessage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Menu.MenuName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Menu.MenuName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Answer)
+        </dt>
+        @if (Model.IsSeen == false)
+            {
+            <dd>
+                @using (Html.BeginForm("AnswerForMenuFeedback", "Feedback"))
+                {
+                    @Html.TextArea("AnswerForFeedBack");
+                    @Html.Hidden("FeedbackId", Model.CritiqMenuId)
+                    <input type="submit" value="Send Answer" class="btn btn-default" />
+                }
+            </dd>
+        }
+        else
+        {
+            <dd>
+                @Html.EditorFor(model => model.Answer)
+            </dd>
+        }
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

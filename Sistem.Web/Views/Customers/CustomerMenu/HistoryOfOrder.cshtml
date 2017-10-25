@@ -1,0 +1,43 @@
+﻿@model PagedList.IPagedList<Sistem.Core.Data.OrderK.Order>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New Order", "CreateOrder")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Date
+        </th>
+        <th>
+            TotalPrice
+        </th>
+        <th>
+            Status
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderStatus.OrderText)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "DetailsForCustomerOrder", new { orderId = item.OrderId })
+            </td>
+        </tr>
+    }
+</table>
+<br /> Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("HistoryOfOrder", new { page }))

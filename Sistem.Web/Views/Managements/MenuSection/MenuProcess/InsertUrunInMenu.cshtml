@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Sistem.Core.Data.MenuK.Product >
+@{
+    ViewBag.Title = "Insert Product InMenu";
+}
+<h2>You can insert new product for selected menu.</h2>
+<table class="table">
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName )
+        </td>
+        <td>
+            @Html.ActionLink("Add This Product In This Menu", "SaveUrunInMenu", new { UrunId = item.ProductId,  MenuId= ViewBag.SelectedMenu }) |
+        </td>
+    </tr>
+}
+</table>
+@Html.ActionLink("Back To The List", "UrunListForMenu", new { MenuId = ViewBag.SelectedMenu })

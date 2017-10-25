@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Sistem.Core.Data.OrderK.Order >
+@{
+    ViewBag.Title = "Index";
+}
+<h2>OrderProcess</h2>
+<p>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date )
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalPrice )
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.ActionLink("See The Details For This Order", "MoveOnThisOrder", new { SiparisID = item.OrderId, MusteriId = item.CustomerId }) |
+            </td>
+        </tr>
+    }
+</table>

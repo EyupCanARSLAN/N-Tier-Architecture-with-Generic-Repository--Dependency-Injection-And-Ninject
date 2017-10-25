@@ -1,0 +1,46 @@
+﻿@model Sistem.Core.Data.CritiqK.GeneralCritiq
+@{
+    ViewBag.Title = "Details About Feedback";
+}
+<h2>DetailsAboutFeedback</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CritiqText)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CritiqText)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSeen)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsSeen)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AnswerText)
+        </dt>
+        @if (Model.IsSeen == false)
+            {
+            <dd>
+                @using (Html.BeginForm("AnswerForGeneralFeedback", "Feedback"))
+                {
+                    @Html.TextArea("AnswerForFeedBack");
+                    @Html.Hidden("FeedbackId", Model.GeneralCritiqId)
+                    <input type="submit" value="Send Answer" class="btn btn-default" />
+                }
+            </dd>
+        }
+        else
+        {
+            <dd>
+                @Html.EditorFor(model => model.AnswerText)
+            </dd>
+        }
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

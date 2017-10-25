@@ -1,0 +1,97 @@
+﻿@model Sistem.Core.Data.MenuK.Menu
+@{
+    ViewBag.Title = "IstatistikForMenu";
+}
+<h2>Statistic For Menu</h2>
+<div>
+    <h4>Menu</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MenuName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MenuName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <dl class="dl-horizontal">
+        <dd>
+            <b>Menu's Product</b>
+            @foreach (var item in Model.Product)
+            {
+                @Html.DisplayFor(modelItem => item.ProductName)  <b>|</b>
+            }
+        </dd>
+    </dl>
+</div>
+<b>Menu's Statistic</b>
+<dl class="dl-horizontal">
+    @foreach (var item in Model.MenuSalesStatistic)
+    {
+        <br />
+        <br />
+        <dt>
+            <b> Sales Month</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(modelItem => item.SalesMonth)
+        </dd>
+        <dt>
+            <b> Sales Year</b>
+        </dt>
+        <dd>
+            @Html.DisplayFor(modelItem => item.SalesYear)
+        </dd>
+        <dt>
+            <b>Sales Quantity </b>
+        </dt>
+        <dd>
+            <span>
+                @Html.DisplayFor(modelItem => item.SalesCount)
+            </span>
+        </dd>
+        <dt>
+            <b>Sales Unique Price</b>
+        </dt>
+        <dd>
+            <span>
+                @Html.DisplayFor(modelItem => item.SalesUniquePrice)
+            </span>
+        </dd>
+        <dt>
+            <b>Vote Number By Customer</b>
+        </dt>
+        <dd>
+            <span>
+                @Html.DisplayFor(modelItem => item.CustomerCountThatGiveVote)
+            </span>
+        </dd>
+        <dt>
+            <b>  Average Vote (1-5)</b>
+        </dt>
+        <dd>
+            <span>
+                @{
+                    var AvarageVote = 0;
+                    if (item.CustomerCountThatGiveVote > 0 || item.Vote > 0)
+                    {
+                        AvarageVote = item.Vote / item.CustomerCountThatGiveVote;
+                    }
+                }
+                <b>@AvarageVote</b>
+            </span>
+        </dd>
+}
+</dl>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

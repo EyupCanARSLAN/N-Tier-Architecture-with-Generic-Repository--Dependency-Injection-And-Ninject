@@ -1,0 +1,170 @@
+﻿<error errorId="631210d2-932b-4794-adfd-a50be551b712" host="CANBEY" type="System.FormatException" message="GUID, 4 çizgi bulunan 32 basamak içermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)." source="mscorlib" detail="System.Web.HttpUnhandledException (0x80004005): 'System.Web.HttpUnhandledException' türünde özel durum oluşturuldu. ---&gt; System.ArgumentException: GUID, 4 çizgi bulunan 32 basamak içermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&#xD;&#xA;Parametre adı: 4 ---&gt; System.FormatException: GUID, 4 çizgi bulunan 32 basamak içermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&#xD;&#xA;   konum: System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult&amp; result)&#xD;&#xA;   konum: System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult&amp; result)&#xD;&#xA;   konum: System.Guid..ctor(String g)&#xD;&#xA;   konum: Elmah.XmlFileErrorLog.GetError(String id)&#xD;&#xA;   --- İç özel durum yığını izlemesinin sonu ---&#xD;&#xA;   konum: Elmah.XmlFileErrorLog.GetError(String id)&#xD;&#xA;   konum: Elmah.ErrorDetailPage.OnLoad(EventArgs e)&#xD;&#xA;   konum: System.Web.UI.Control.LoadRecursive()&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   konum: System.Web.UI.Page.HandleError(Exception e)&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequest()&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)&#xD;&#xA;   konum: System.Web.UI.Page.ProcessRequest(HttpContext context)&#xD;&#xA;   konum: Elmah.Mvc.ElmahResult.ExecuteResult(ControllerContext context)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="admin@example.com" time="2016-02-03T20:30:19.3647675Z" statusCode="500" webHostHtmlMessage="&lt;!DOCTYPE html&gt;&#xD;&#xA;&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;GUID, 4 &amp;#231;izgi bulunan 32 basamak i&amp;#231;ermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&lt;/title&gt;&#xD;&#xA;        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:&quot;Verdana&quot;;font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:&quot;Verdana&quot;;font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:&quot;Verdana&quot;;font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:&quot;Verdana&quot;;font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:&quot;Consolas&quot;,&quot;Lucida Console&quot;,Monospace;font-size:11pt;margin:0;padding:0.5em;line-height:14pt}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;         @media screen and (max-width: 639px) {&#xD;&#xA;          pre { width: 440px; overflow: auto; white-space: pre-wrap; word-wrap: break-word; }&#xD;&#xA;         }&#xD;&#xA;         @media screen and (max-width: 479px) {&#xD;&#xA;          pre { width: 280px; }&#xD;&#xA;         }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor=&quot;white&quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;'/' Uygulamasında Sunucu Hatası.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;GUID, 4 &amp;#231;izgi bulunan 32 basamak i&amp;#231;ermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face=&quot;Arial, Helvetica, Geneva, SunSans-Regular, sans-serif &quot;&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Açıklama: &lt;/b&gt;Geçerli web isteği yürütülürken işlenmemiş özel durum oluştu. Lütfen hata ve kod içinde kaynaklandığı yer hakkında daha fazla bilgi almak için yığın izlemesini gözden geçirin.&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Özel Durum Ayrıntıları: &lt;/b&gt;System.FormatException: GUID, 4 &amp;#231;izgi bulunan 32 basamak i&amp;#231;ermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Kaynak Hatası:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&#xD;&#xA;&#xD;&#xA;Ge&amp;#231;erli web isteği y&amp;#252;r&amp;#252;t&amp;#252;l&amp;#252;rken işlenmeyen bir &amp;#246;zel durum &amp;#252;retildi. &amp;#214;zel durumun kaynağı ve konumuna ilişkin bilgiler aşağıdaki &amp;#246;zel durum yığını izlemesi kullanılarak belirlenebilir.&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Yığın İzleme:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor=&quot;#ffffcc&quot;&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[FormatException: GUID, 4 &amp;#231;izgi bulunan 32 basamak i&amp;#231;ermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).]&#xD;&#xA;   System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult&amp;amp; result) +11965461&#xD;&#xA;   System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult&amp;amp; result) +218&#xD;&#xA;   System.Guid..ctor(String g) +105&#xD;&#xA;   Elmah.XmlFileErrorLog.GetError(String id) +55&#xD;&#xA;&#xD;&#xA;[ArgumentException: GUID, 4 &amp;#231;izgi bulunan 32 basamak i&amp;#231;ermelidir (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).&#xD;&#xA;Parametre adı: 4]&#xD;&#xA;   Elmah.XmlFileErrorLog.GetError(String id) +136&#xD;&#xA;   Elmah.ErrorDetailPage.OnLoad(EventArgs e) +102&#xD;&#xA;   System.Web.UI.Control.LoadRecursive() +59&#xD;&#xA;   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +2952&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;Cookie: __RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ&#xD;&#xA;Host: localhost:54272&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="admin@example.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/ShowException/.detail" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\ShowException" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="id=4" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="55177" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/ShowException" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/ShowException" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1; .AspNet.ApplicationCookie=TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="id">
+      <value string="4" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="d6CJr7JlM3e1hQ6vfMTnFduzEH-nNouLQ97-Ec5bZlvXCm8zjJl2T5mYDw9keiGyEAUvdwxIu1kPCQ-IIbAtq5pXeNWXV-SM-ukO_d5hhJQ1" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="TLRXI8s_GI3mv9Zifh6aFmA0ZY7sY2G9dvy89P9oKm-nxDZjdhdHmu3mDOO2Xgm5TUbVtNYTjIXHxtAZ8JiqO5U5d3Np7ZGWRlTPbofYCqH5ohkYzPqDyKo2kG4RU40aw19CtZjQOpcB-z0bv2Yx6ecduCZUPJtxCND1siK1GsnUUxI2CzuNd0EqKk5lfy9XOwmEB0f7mZiHR_LdNcMFDdXxKFGJTT95qBvIgU4V9chj6K1IJ24clBEAMz9eDaIXJaRoD_3-_YNScnpi2fAUtn61HrOPu5tAtMztJaDwTr7GBOsIKYS3HgoeGN0DaVh76AMjH8RGusBCzFwS_iZA_NHT-xk3nuee412loyv8uoWhVjPd68hisx8cc7k0EWcJlnUvk9m3S6vqkl_LtXlBXV9VNbQVBCeeOjfqQlHotKq0vZfaDc2qlcxjsvvq0KYrV1X-DpkEtYZYvp9rOE36fJAAyas2omNPm9zrPyLEFoRwHC70Ovq3sfk-QlxSG8OCVfi-a5XDFFmHfGcxXEYZuQ" />
+    </item>
+  </cookies>
+</error>

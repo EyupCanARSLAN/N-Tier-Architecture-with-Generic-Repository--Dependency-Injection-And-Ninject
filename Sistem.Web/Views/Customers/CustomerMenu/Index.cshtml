@@ -1,0 +1,111 @@
+﻿@model PagedList.IPagedList<Sistem.Web.Models.ViewModel.Customer.Feedback.Feedback>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+@{
+    ViewBag.Title = "Customer Index Page";
+}
+<h2>Customer Index Page</h2>
+<center>
+    @Html.ActionLink("Create New Order", "CreateOrder") |
+    @Html.ActionLink("See History Of Order", "HistoryOfOrder")
+</center>
+<table cellpadding="20" border="0" align="center">
+    <tr>
+        <td style="text-align:center; vertical-align:top;">
+            <h3>Your Last Order</h3>
+            <br />
+            @{Sistem.Core.Data.OrderK.Order LastOrderForCustomer = new Sistem.Core.Data.OrderK.Order();
+                if (ViewBag.LastOrder != null)
+                {
+                    LastOrderForCustomer = ViewBag.LastOrder as Sistem.Core.Data.OrderK.Order;
+                    <b>Date:</b>@LastOrderForCustomer.Date
+                    <br />
+                    <b>Total Payment:</b>@LastOrderForCustomer.TotalPrice
+                    <br />
+                    <b>Order Detail:</b>
+                    <br />
+                    foreach (var EachOrder in LastOrderForCustomer.OrderDetail)
+                    {
+                        <b>Menu Name: </b>@EachOrder.Menu.MenuName
+                        <br />
+                        <b>Quantity: </b>@EachOrder.Count.ToString()
+                        <br />
+                    }
+                }
+            }
+        </td>
+        <td style="text-align:center; vertical-align: top">
+            <h3>Your Favourite Menu</h3>
+            @{Sistem.Core.Data.MenuK.Menu FavouriteMenuForCustomer = new Sistem.Core.Data.MenuK.Menu();
+                if (ViewBag.FavouriteMenu != null)
+                {
+                    FavouriteMenuForCustomer = ViewBag.FavouriteMenu as Sistem.Core.Data.MenuK.Menu;
+                    <br />
+                    <b> Menu Name</b>@FavouriteMenuForCustomer.MenuName;   <<<br />
+                    <b>Total OrderCount:</b>@ViewBag.FavouriteMenuOrderCount
+                    <br />
+                    <b>Menu Detail:</b>
+                    <br />
+                    <b>Product Name: </b>
+                    foreach (var EachItem in FavouriteMenuForCustomer.Product)
+                    {
+                        @EachItem.ProductName<b>|</b>
+                    }
+                }
+            }
+        </td>
+    </tr>
+</table>
+<br />
+<b>You can give feedback as general or about Menu Via this forms.</b>
+@using (Html.BeginForm("CommentForMenuOrGeneral", "CustomerMenu"))
+{ @Html.AntiForgeryToken()
+    <table border="1" cellpadding="10" align="center">
+        <tr>
+            <td>
+                Choose your Topic(General Information or Menu Name)<br />
+                @Html.DropDownList("DropdownForFeedBack", null, htmlAttributes: new { @class = "form-control" })
+            </td>
+            <td>
+                Your Feedback<br />
+                @Html.TextArea("CustomerFeedback")
+            </td>
+            <td><input type="submit" value="Send Your Feedback" class="btn btn-default" /></td>
+        </tr>
+    </table>
+}
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <b>Your Feedback Topic</b> <br />@Html.DisplayFor(modelItem => item.Subject)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Your Feedback</b> <br /> @Html.DisplayFor(modelItem => item.CritiqText)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <b>Our Answer</b>
+                    @if (item.IsSeen)
+                    {
+                    <p>@Html.DisplayFor(modelItem => item.Answer)</p>
+                    }
+                    else
+                    {
+                        <p> We saved your feeback in our system. We will give an answer. Thanks for your feedback.</p>
+                    }
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><hr /></td>
+            </tr>
+    }
+</table>
+<br /> Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))

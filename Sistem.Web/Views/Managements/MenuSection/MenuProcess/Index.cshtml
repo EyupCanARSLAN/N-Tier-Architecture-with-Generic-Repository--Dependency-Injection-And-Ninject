@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Sistem.Core.Data.MenuK.Menu>
+@{
+    ViewBag.Title = "Menu Process";
+}
+<h2>Index</h2>
+<p>@ViewBag.ErrorOccur</p>
+<p>
+    @Html.ActionLink("Menu Process", "CreateMenu") | @Html.ActionLink("Product process", "AllUrunList") 
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MenuName )
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price )
+        </th>
+        <th></th>
+    </tr>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MenuName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit This Menu's Product", "UrunListForMenu", new {MenuId=item.MenuId}) <b>|</b>
+            @Html.ActionLink("See The Statistics For This Menu", "IstatistikForMenu", new { MenuId = item.MenuId })        
+        </td>
+    </tr>
+}
+</table>

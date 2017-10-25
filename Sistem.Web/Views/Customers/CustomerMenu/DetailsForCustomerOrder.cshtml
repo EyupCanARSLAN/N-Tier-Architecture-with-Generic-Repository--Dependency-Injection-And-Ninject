@@ -1,0 +1,117 @@
+﻿@model Sistem.Core.Data.OrderK.Order
+@{
+    ViewBag.Title = "DetailsForCustomerOrder";
+}
+<h2>DetailsForCustomerOrder</h2>
+<div>
+    <h4>Siparis</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date )
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice )
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+    </dl>
+</div>
+@{
+    if (Model.CloseThisOrder)
+    {
+        <p>According to Our Record's; your order was sended. İf you want you can give point between (1(Bad) - 5(Soo Good)) for your unvoted Order.</p>
+        <p>You can give vote for each order. If you give vote one item in order list, you can't change this vote.</p>
+    }
+}
+<table cellpadding="10" border="1">
+    <tr>
+        <th>
+            Menu Name
+        </th>
+        <th> Quantity</th>
+        <th> Price</th>
+        @if (Model.CloseThisOrder)
+        {
+            <th>Your Vote</th>
+        }
+    </tr>
+    @foreach (var item in Model.OrderDetail )
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Menu.MenuName )
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count )
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalesPrice)
+            </td>
+            @if (item.RateOfCustomer == 0 && Model.CloseThisOrder == true && Model.OrderStatus.OrderCode == 3)
+            {
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        <b> ShareYourVoteWithUs :</b><input id="Vote" name="Vote" value="1" type="number" min="1" max="5">
+                        @Html.Hidden("SiparisId", item.OrderId )
+                        @Html.Hidden("MenuId", item.MenuId )
+                        @Html.Hidden("DetayNo", item.OrderDetailId )
+                        <input type="submit" value="Send Your Vote :)" class="btn btn-default" />
+                    }
+                </td>
+            }
+            @if (item.RateOfCustomer > 0)
+            {
+                <td>
+                    <b> Your vote for this Menu was:</b> @Html.DisplayFor(modelItem => item.RateOfCustomer)
+                </td>
+            }
+        </tr>
+    }
+</table>
+@if (Model.CloseThisOrder)
+{
+    <table style="margin-top:80px; margin-bottom:20px;">
+        <tr>
+            <td>
+                Do you want to share your comment with us?
+            </td>
+        </tr>
+        <tr>
+            <td>
+                    @using (Html.BeginForm("CustomerComment", "CustomerMenu"))
+                    {
+                        @Html.TextArea("CustomerComment");
+                        @Html.Hidden("SiparisId", Model.OrderId )
+                        <input type="submit" value="Share Your Comment" class="btn btn-default" />
+                    }
+            </td>
+        </tr>
+    </table>
+    <center><b style="font-size:medium;">Your old comment and Restaurant answer</b></center>
+    foreach (var EachSiparisComment in Model.CritiqOrder)
+    {
+        <p><b>Your Feedback</b> <br />@EachSiparisComment.CritiqMessage </p>
+        <p>
+            <b>Our Answer</b>  
+            @if (EachSiparisComment.IsSeen == true)
+            {
+                <p>@Html.DisplayFor(modelItem => EachSiparisComment.Answer )</p>
+            }
+            else
+            {
+        <p> We saved your feeback in our system. We will give an answer. Thanks for your feedback.</p> 
+}
+        </p>
+        <hr style="border:groove; align-self:center; width:75%; height:2px;" />
+    }
+}
+<p>
+
+    @Html.ActionLink("Back to List", "HistoryOfOrder")
+</p>

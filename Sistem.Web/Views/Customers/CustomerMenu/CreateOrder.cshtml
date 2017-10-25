@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Sistem.Core.Data.MenuK.Menu>
+@{
+    ViewBag.Title = "CreateOrder";
+}
+<h2>Order Process</h2>
+<br />
+<p>
+    <h5>Your OrderList</h5>
+    <table cellpadding="10" border="1">
+        <tr>
+            <th>Menu Name</th>
+            <th>Count</th>
+            <th>UniqPrice</th>
+            <th>TotalPrice</th>
+            <th></th>
+        </tr>
+        @{
+            var OrderList = Session["CustomerOrderList"] as LinkedList<Sistem.Web.Models.ViewModel.Customer.Order.CustomerOrder>;
+            decimal TotalPrice = 0;
+            if (OrderList != null)
+            {
+                foreach (var EachOrderInList in OrderList)
+                {
+                    TotalPrice += EachOrderInList.TotalPrice;
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => EachOrderInList.MenuName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => EachOrderInList.Quantity)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => EachOrderInList.UniquePrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => EachOrderInList.TotalPrice)
+                        </td>
+                        <td>@Html.ActionLink("Delete This Menu In MyList", "DeleteOrder", new { menuId = EachOrderInList.MenuId, menuName = EachOrderInList.MenuName })</td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+</p>
+<p>
+    Your Order total Price: <b> @TotalPrice.ToString("0.00 TL")</b>
+    @Html.ActionLink("Complate The Order and Payment", "ComplateOrder")
+    <hr />
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MenuName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MenuName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <b> Order Count:</b> @Html.TextBox("OrderCount", Request["k"])
+                    @Html.Hidden("menuId", item.MenuId)
+                    @Html.Hidden("menuName", item.MenuName)
+                    <input type="submit" value="Add OrderList" class="btn btn-default" />
+                }
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <b>Ingredients For @Html.DisplayFor(modelItem => item.MenuName)</b>
+                @foreach (var UrunForEachMenu in item.Product)
+                {
+                    <span style="margin-left:10px;"> @Html.DisplayFor(modelItem => UrunForEachMenu.ProductName) </span>
+                }
+            </td>
+        </tr>
+            <tr>
+                <td colspan="3">
+                    <p style="margin-top:20px;">
+                    </p>
+                </td>
+            </tr>
+    }
+</table>

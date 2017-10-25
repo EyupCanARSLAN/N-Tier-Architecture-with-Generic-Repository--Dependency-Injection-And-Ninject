@@ -1,0 +1,171 @@
+﻿<error errorId="da156382-d40c-4c1d-97f3-2b93ba421731" host="CANBEY" type="System.InvalidOperationException" message="The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Sistem.Core.Data.ElestiriK.ElestiriGenel]', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Sistem.Core.Data.ElestiriK.ElestiriSiparis]'." source="System.Web.Mvc" detail="System.InvalidOperationException: The model item passed into the dictionary is of type 'System.Collections.Generic.List`1[Sistem.Core.Data.ElestiriK.ElestiriGenel]', but this dictionary requires a model item of type 'System.Collections.Generic.IEnumerable`1[Sistem.Core.Data.ElestiriK.ElestiriSiparis]'.&#xD;&#xA;   konum: System.Web.Mvc.ViewDataDictionary`1.SetModel(Object value)&#xD;&#xA;   konum: System.Web.Mvc.ViewDataDictionary..ctor(ViewDataDictionary dictionary)&#xD;&#xA;   konum: System.Web.Mvc.WebViewPage`1.SetViewData(ViewDataDictionary viewData)&#xD;&#xA;   konum: System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)&#xD;&#xA;   konum: System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)&#xD;&#xA;   konum: System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="managements@example.com" time="2017-09-23T11:13:35.1515333Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=tIVYj5Hq2sYcpvPGnnI1EZANX2o9k1W-VtdPh163VXEZJRqorYxifaPa7ejS96qTXSGlkb6hAhq6kNJeHA2_v4MQE1ojcXf7uLrPbaZDfzk1; ASP.NET_SessionId=uquegh1y55haam05hd2a3tqv; .AspNet.ApplicationCookie=9dt2OBTnhFkUxTWSv71QoCdvPdNNan2Y678UzOxFn-ZUM1kGqb6thXft7l4hWkIRA2drkzf0wtPuMkBLCmRTmIk3wmBrakEJbSuPs_fRLCjlt7mTPduhQbLTM2VQX6LwyK_J-hRmL8t_CmaazgP1nQgy3W2RSdc5M0WGfCHxTjn3W6phCVm6RrziJxlQPuve0cNyps7711hCutU02XHQatOZXAnWRtB_ZHAKxgekq38ni0KrHROyccLJT6JKlyLjiEX-lEM57Efu-W8gB4DGNR4yo_Y88Cpvtajgg9J0ngrKQEKi7_yK4_tNTsKHiM0ADjM0uxeAR6RHYb6i1fyjd891K1ktnLdqgaH3CGhJHdVQYrHd3AxhiU2xHsKIjFwf46_L2SnMRJISeVjiF7h4NHYmvTaBjzN_nqe84-99ls52GEenLdpztJu3Vzkc50vsRMMvWiWTaSU6EP745H4UqGcoYGdNlTd5a8cl91_RjHCRghkmNFFRBFRrGc7SMG1TFULiHfCJMJyxNYQTGKwq0g&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_REFERER:http://localhost:54272/Managements&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3&#xD;&#xA;Cookie: __RequestVerificationToken=tIVYj5Hq2sYcpvPGnnI1EZANX2o9k1W-VtdPh163VXEZJRqorYxifaPa7ejS96qTXSGlkb6hAhq6kNJeHA2_v4MQE1ojcXf7uLrPbaZDfzk1; ASP.NET_SessionId=uquegh1y55haam05hd2a3tqv; .AspNet.ApplicationCookie=9dt2OBTnhFkUxTWSv71QoCdvPdNNan2Y678UzOxFn-ZUM1kGqb6thXft7l4hWkIRA2drkzf0wtPuMkBLCmRTmIk3wmBrakEJbSuPs_fRLCjlt7mTPduhQbLTM2VQX6LwyK_J-hRmL8t_CmaazgP1nQgy3W2RSdc5M0WGfCHxTjn3W6phCVm6RrziJxlQPuve0cNyps7711hCutU02XHQatOZXAnWRtB_ZHAKxgekq38ni0KrHROyccLJT6JKlyLjiEX-lEM57Efu-W8gB4DGNR4yo_Y88Cpvtajgg9J0ngrKQEKi7_yK4_tNTsKHiM0ADjM0uxeAR6RHYb6i1fyjd891K1ktnLdqgaH3CGhJHdVQYrHd3AxhiU2xHsKIjFwf46_L2SnMRJISeVjiF7h4NHYmvTaBjzN_nqe84-99ls52GEenLdpztJu3Vzkc50vsRMMvWiWTaSU6EP745H4UqGcoYGdNlTd5a8cl91_RjHCRghkmNFFRBFRrGc7SMG1TFULiHfCJMJyxNYQTGKwq0g&#xD;&#xA;Host: localhost:54272&#xD;&#xA;Referer: http://localhost:54272/Managements&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\MyProject\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="managements@example.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="managements@example.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="managements@example.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/Feedback" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\MyProject\SiparisSistem\Sistem.Web\Feedback" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="49197" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/Feedback" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/Feedback" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=tIVYj5Hq2sYcpvPGnnI1EZANX2o9k1W-VtdPh163VXEZJRqorYxifaPa7ejS96qTXSGlkb6hAhq6kNJeHA2_v4MQE1ojcXf7uLrPbaZDfzk1; ASP.NET_SessionId=uquegh1y55haam05hd2a3tqv; .AspNet.ApplicationCookie=9dt2OBTnhFkUxTWSv71QoCdvPdNNan2Y678UzOxFn-ZUM1kGqb6thXft7l4hWkIRA2drkzf0wtPuMkBLCmRTmIk3wmBrakEJbSuPs_fRLCjlt7mTPduhQbLTM2VQX6LwyK_J-hRmL8t_CmaazgP1nQgy3W2RSdc5M0WGfCHxTjn3W6phCVm6RrziJxlQPuve0cNyps7711hCutU02XHQatOZXAnWRtB_ZHAKxgekq38ni0KrHROyccLJT6JKlyLjiEX-lEM57Efu-W8gB4DGNR4yo_Y88Cpvtajgg9J0ngrKQEKi7_yK4_tNTsKHiM0ADjM0uxeAR6RHYb6i1fyjd891K1ktnLdqgaH3CGhJHdVQYrHd3AxhiU2xHsKIjFwf46_L2SnMRJISeVjiF7h4NHYmvTaBjzN_nqe84-99ls52GEenLdpztJu3Vzkc50vsRMMvWiWTaSU6EP745H4UqGcoYGdNlTd5a8cl91_RjHCRghkmNFFRBFRrGc7SMG1TFULiHfCJMJyxNYQTGKwq0g" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:54272/Managements" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="tIVYj5Hq2sYcpvPGnnI1EZANX2o9k1W-VtdPh163VXEZJRqorYxifaPa7ejS96qTXSGlkb6hAhq6kNJeHA2_v4MQE1ojcXf7uLrPbaZDfzk1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="uquegh1y55haam05hd2a3tqv" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="9dt2OBTnhFkUxTWSv71QoCdvPdNNan2Y678UzOxFn-ZUM1kGqb6thXft7l4hWkIRA2drkzf0wtPuMkBLCmRTmIk3wmBrakEJbSuPs_fRLCjlt7mTPduhQbLTM2VQX6LwyK_J-hRmL8t_CmaazgP1nQgy3W2RSdc5M0WGfCHxTjn3W6phCVm6RrziJxlQPuve0cNyps7711hCutU02XHQatOZXAnWRtB_ZHAKxgekq38ni0KrHROyccLJT6JKlyLjiEX-lEM57Efu-W8gB4DGNR4yo_Y88Cpvtajgg9J0ngrKQEKi7_yK4_tNTsKHiM0ADjM0uxeAR6RHYb6i1fyjd891K1ktnLdqgaH3CGhJHdVQYrHd3AxhiU2xHsKIjFwf46_L2SnMRJISeVjiF7h4NHYmvTaBjzN_nqe84-99ls52GEenLdpztJu3Vzkc50vsRMMvWiWTaSU6EP745H4UqGcoYGdNlTd5a8cl91_RjHCRghkmNFFRBFRrGc7SMG1TFULiHfCJMJyxNYQTGKwq0g" />
+    </item>
+  </cookies>
+</error>

@@ -1,0 +1,168 @@
+﻿<error errorId="d43430b2-b2fa-44e5-acc7-60f0aeb18fee" host="CANBEY" type="System.InvalidOperationException" message="The view 'SendMsg' or its master was not found or no view engine supports the searched locations. The following locations were searched:&#xD;&#xA;~/Views/CustomerMenu/SendMsg.aspx&#xD;&#xA;~/Views/CustomerMenu/SendMsg.ascx&#xD;&#xA;~/Views/Shared/SendMsg.aspx&#xD;&#xA;~/Views/Shared/SendMsg.ascx&#xD;&#xA;~/Views/CustomerMenu/SendMsg.cshtml&#xD;&#xA;~/Views/CustomerMenu/SendMsg.vbhtml&#xD;&#xA;~/Views/Shared/SendMsg.cshtml&#xD;&#xA;~/Views/Shared/SendMsg.vbhtml" source="System.Web.Mvc" detail="System.InvalidOperationException: The view 'SendMsg' or its master was not found or no view engine supports the searched locations. The following locations were searched:&#xD;&#xA;~/Views/CustomerMenu/SendMsg.aspx&#xD;&#xA;~/Views/CustomerMenu/SendMsg.ascx&#xD;&#xA;~/Views/Shared/SendMsg.aspx&#xD;&#xA;~/Views/Shared/SendMsg.ascx&#xD;&#xA;~/Views/CustomerMenu/SendMsg.cshtml&#xD;&#xA;~/Views/CustomerMenu/SendMsg.vbhtml&#xD;&#xA;~/Views/Shared/SendMsg.cshtml&#xD;&#xA;~/Views/Shared/SendMsg.vbhtml&#xD;&#xA;   konum: System.Web.Mvc.ViewResult.FindView(ControllerContext context)&#xD;&#xA;   konum: System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="eyupcan2@gmail.com" time="2016-01-31T13:58:25.4135311Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate, sdch&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4&#xD;&#xA;Cookie: __RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2&#xD;&#xA;Host: localhost:54272&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="eyupcan2@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/CustomerMenu/SendMsg" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\Cans\Documents\Referans-Demo\SiparisSistem\Sistem.Web\CustomerMenu\SendMsg" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="51328" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/CustomerMenu/SendMsg" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/CustomerMenu/SendMsg" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.6,en;q=0.4" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1; ASP.NET_SessionId=ndvl4ee1k1vakcek1uask3zf; .AspNet.ApplicationCookie=TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="2Qz_02l0mDDN_rA3oHMfAbOK8JfGAghCrSUPqWeadK9Dl6FnBMrxgsatXK9qdx0X_S8I4M2gqa1c0lviwtOVstXZiyD1GEDMnuiELYEBVJM1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="ndvl4ee1k1vakcek1uask3zf" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="TWzUvgO9-r-z00b22asolwjKUyUNMrl7uievRVd9UIneZAvJu84Mdc43I_SUpuKcMBoEESlAlJtvZdEYOAvhMyq_W2h9P0k95Gt_U2tyii7LIQvxmaEd6i4C9cKk6k42C-LYE3HQIlPKxkXqv28QDmCV-Nv5ahRtJaTJla9wcz2brCUB4qtpMessShA_S9RXLcLLpJjB4GHC71K2uMXACiSpOQA0ABS5VvELqaLZgiI3PhmaGCUzkgmRX3o1co2u5J4Gf6lPMb22IlDQ0mAix-exTMCfjH5Q7cfq5RLb0xd8c2rTsMIZftj3cXHRagfHKpkhc6elQ2LDQDNuntOazoLzC8aV8N8pWifbLoXEQBWac91kwkRsXWkM9TqDtKXcE3I24rO6UQJaWCNUT8DDLnK76tI6yWQW4BgamriFG5jBd14wFrN88teqr0gqTJNJBW1SkGAsrPBJK2p9kgFTmYgbgBGTU6SvRp8WbC_KqVzFgAwWKcTLMEDFpnVgsoZ2" />
+    </item>
+  </cookies>
+</error>

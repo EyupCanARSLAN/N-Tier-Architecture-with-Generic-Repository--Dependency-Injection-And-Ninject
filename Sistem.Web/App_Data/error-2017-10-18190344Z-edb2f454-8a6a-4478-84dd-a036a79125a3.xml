@@ -1,0 +1,171 @@
+﻿<error errorId="edb2f454-8a6a-4478-84dd-a036a79125a3" host="CANBEY" type="Microsoft.CSharp.RuntimeBinder.RuntimeBinderException" message="'object' bir 'OrderCount' tanımı içermiyor" source="Anonymously Hosted DynamicMethods Assembly" detail="Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'object' bir 'OrderCount' tanımı içermiyor&#xD;&#xA;   konum: CallSite.Target(Closure , CallSite , Object )&#xD;&#xA;   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)&#xD;&#xA;   konum: Sistem.Web.Controllers.Customer.CustomerMenuController.Index(Nullable`1 page) C:\MyProject\SiparisSistem\Sistem.Web\Controllers\Customer\CustomerMenuController.cs içinde: satır 57&#xD;&#xA;   konum: lambda_method(Closure , ControllerBase , Object[] )&#xD;&#xA;   konum: System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)&#xD;&#xA;   konum: System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;BeginInvokeSynchronousActionMethod&gt;b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3d()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.&lt;&gt;c__DisplayClass46.&lt;InvokeActionMethodFilterAsynchronouslyRecursive&gt;b__3f()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass33.&lt;BeginInvokeActionMethodWithFilters&gt;b__32(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;&gt;c__DisplayClass2b.&lt;BeginInvokeAction&gt;b__1c()&#xD;&#xA;   konum: System.Web.Mvc.Async.AsyncControllerActionInvoker.&lt;&gt;c__DisplayClass21.&lt;BeginInvokeAction&gt;b__1e(IAsyncResult asyncResult)" user="customer@example.com" time="2017-10-18T19:03:44.3081659Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3&#xD;&#xA;HTTP_COOKIE:__RequestVerificationToken=gP9_jIPtGTBzIRn3RFO6R5lNVmSvI9zU-kxGpEM5KWyt4WU1bL424vX1L_vYilRta_dJ7BkIzmsQcIdWfOSSaeOUe84OFmDoz8nfmGzd2_s1; ASP.NET_SessionId=4uu32m1bjptzw1ifiv21oui4; .AspNet.ApplicationCookie=pgYbgMEzHqQfrperIAsdKuRXJH7wKjuc-s0ra53S0TOQWJ-wOaatAkhtEU49LvFSNdPRST9gpzLZeezSaKvzQ-ScoPW8A_6gDx5aCbuql4OmZhlEFOSEraXu01hnUCi3tSVyEn1Y7ohRRf1R_rYIa14JkTs9AxNRKj4q8EHoJhviRxlx1nL4D-hTDE48GYntVl8o8N3sTsFU-YtLxCqGwxRPY_81j8O9OYxVxLrMXWrJbsSo4eRBPpg1KS3I-IoltWeE9sxTHMq-z5df19qCVv12JGiAcGAdqjMLpwdDVZpJOEsD4vJcD3R6ZM9Jv2SgZ3ylbksKFfCcIUIxg-xhj0balnrsZhdHgzeRz5k-bkRWgGRI32YMzsLBNK5o0jgOl902gU8XhNMvLAGOoyDS0WJNajqNTlLEJuZvp3gxcp0lzlaDmq1ayC5oE4vjxK16gMhjB6U3i93pV_0RhTPZ-s65Xntuwlk9qFuNq6XanjITYcK2liDDB2q98YnJPbDauhH9sY4sRx97scBJVsXYjw&#xD;&#xA;HTTP_HOST:localhost:54272&#xD;&#xA;HTTP_REFERER:http://localhost:54272/Account/Login&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0&#xD;&#xA;HTTP_UPGRADE_INSECURE_REQUESTS:1&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3&#xD;&#xA;Cookie: __RequestVerificationToken=gP9_jIPtGTBzIRn3RFO6R5lNVmSvI9zU-kxGpEM5KWyt4WU1bL424vX1L_vYilRta_dJ7BkIzmsQcIdWfOSSaeOUe84OFmDoz8nfmGzd2_s1; ASP.NET_SessionId=4uu32m1bjptzw1ifiv21oui4; .AspNet.ApplicationCookie=pgYbgMEzHqQfrperIAsdKuRXJH7wKjuc-s0ra53S0TOQWJ-wOaatAkhtEU49LvFSNdPRST9gpzLZeezSaKvzQ-ScoPW8A_6gDx5aCbuql4OmZhlEFOSEraXu01hnUCi3tSVyEn1Y7ohRRf1R_rYIa14JkTs9AxNRKj4q8EHoJhviRxlx1nL4D-hTDE48GYntVl8o8N3sTsFU-YtLxCqGwxRPY_81j8O9OYxVxLrMXWrJbsSo4eRBPpg1KS3I-IoltWeE9sxTHMq-z5df19qCVv12JGiAcGAdqjMLpwdDVZpJOEsD4vJcD3R6ZM9Jv2SgZ3ylbksKFfCcIUIxg-xhj0balnrsZhdHgzeRz5k-bkRWgGRI32YMzsLBNK5o0jgOl902gU8XhNMvLAGOoyDS0WJNajqNTlLEJuZvp3gxcp0lzlaDmq1ayC5oE4vjxK16gMhjB6U3i93pV_0RhTPZ-s65Xntuwlk9qFuNq6XanjITYcK2liDDB2q98YnJPbDauhH9sY4sRx97scBJVsXYjw&#xD;&#xA;Host: localhost:54272&#xD;&#xA;Referer: http://localhost:54272/Account/Login&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0&#xD;&#xA;Upgrade-Insecure-Requests: 1&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\MyProject\SiparisSistem\Sistem.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="ApplicationCookie" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="customer@example.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="customer@example.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="customer@example.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/CustomerMenu" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\MyProject\SiparisSistem\Sistem.Web\CustomerMenu" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="50212" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/CustomerMenu" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="54272" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/CustomerMenu" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="__RequestVerificationToken=gP9_jIPtGTBzIRn3RFO6R5lNVmSvI9zU-kxGpEM5KWyt4WU1bL424vX1L_vYilRta_dJ7BkIzmsQcIdWfOSSaeOUe84OFmDoz8nfmGzd2_s1; ASP.NET_SessionId=4uu32m1bjptzw1ifiv21oui4; .AspNet.ApplicationCookie=pgYbgMEzHqQfrperIAsdKuRXJH7wKjuc-s0ra53S0TOQWJ-wOaatAkhtEU49LvFSNdPRST9gpzLZeezSaKvzQ-ScoPW8A_6gDx5aCbuql4OmZhlEFOSEraXu01hnUCi3tSVyEn1Y7ohRRf1R_rYIa14JkTs9AxNRKj4q8EHoJhviRxlx1nL4D-hTDE48GYntVl8o8N3sTsFU-YtLxCqGwxRPY_81j8O9OYxVxLrMXWrJbsSo4eRBPpg1KS3I-IoltWeE9sxTHMq-z5df19qCVv12JGiAcGAdqjMLpwdDVZpJOEsD4vJcD3R6ZM9Jv2SgZ3ylbksKFfCcIUIxg-xhj0balnrsZhdHgzeRz5k-bkRWgGRI32YMzsLBNK5o0jgOl902gU8XhNMvLAGOoyDS0WJNajqNTlLEJuZvp3gxcp0lzlaDmq1ayC5oE4vjxK16gMhjB6U3i93pV_0RhTPZ-s65Xntuwlk9qFuNq6XanjITYcK2liDDB2q98YnJPbDauhH9sY4sRx97scBJVsXYjw" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:54272" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:54272/Account/Login" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.2; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0" />
+    </item>
+    <item name="HTTP_UPGRADE_INSECURE_REQUESTS">
+      <value string="1" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="__RequestVerificationToken">
+      <value string="gP9_jIPtGTBzIRn3RFO6R5lNVmSvI9zU-kxGpEM5KWyt4WU1bL424vX1L_vYilRta_dJ7BkIzmsQcIdWfOSSaeOUe84OFmDoz8nfmGzd2_s1" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="4uu32m1bjptzw1ifiv21oui4" />
+    </item>
+    <item name=".AspNet.ApplicationCookie">
+      <value string="pgYbgMEzHqQfrperIAsdKuRXJH7wKjuc-s0ra53S0TOQWJ-wOaatAkhtEU49LvFSNdPRST9gpzLZeezSaKvzQ-ScoPW8A_6gDx5aCbuql4OmZhlEFOSEraXu01hnUCi3tSVyEn1Y7ohRRf1R_rYIa14JkTs9AxNRKj4q8EHoJhviRxlx1nL4D-hTDE48GYntVl8o8N3sTsFU-YtLxCqGwxRPY_81j8O9OYxVxLrMXWrJbsSo4eRBPpg1KS3I-IoltWeE9sxTHMq-z5df19qCVv12JGiAcGAdqjMLpwdDVZpJOEsD4vJcD3R6ZM9Jv2SgZ3ylbksKFfCcIUIxg-xhj0balnrsZhdHgzeRz5k-bkRWgGRI32YMzsLBNK5o0jgOl902gU8XhNMvLAGOoyDS0WJNajqNTlLEJuZvp3gxcp0lzlaDmq1ayC5oE4vjxK16gMhjB6U3i93pV_0RhTPZ-s65Xntuwlk9qFuNq6XanjITYcK2liDDB2q98YnJPbDauhH9sY4sRx97scBJVsXYjw" />
+    </item>
+  </cookies>
+</error>
