@@ -20,13 +20,22 @@ for WebPanel Section.
 General Explanation:
 Customer can give order using this system. Restaurant can manage it's Menu and take Statistic
 about it's product, feedback about Customer Comment's
+
 This Systems Some Proporties:
 For Customer
+
 • Customers have to approve their Order via Cell Phone SMS Code
+
 • Customers give Order and take information about Order's status
+
 • Customers can give vote and make a comment about their orders.
+
 • Customers can see their order activity.
+
 For Managements
 • Take Customers' feedback about Menu and Orders
+
 • Take Statistic according to Price, Month and Year
+
 • Manage Orders' Status
+
