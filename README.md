@@ -1,4 +1,6 @@
-This is an NTier Architecure prototip. At these prototip, I used these technologies. I currently develop these prototip. 
+This is an NTier Architecure prototip. At these prototip, I used these technologies. I currently develop these prototip.
+
+This project have connection with WebApi, WindowsForm etc that is only prototype. So, I ignored lot's of desing rules for them.  
 
 Freamworks: 
 Entity Freamwork, Ninject Freamwork, Identity Freamwork, Elmah Freamwork, MVC, WebApi 2.0
